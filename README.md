@@ -21,51 +21,39 @@ After a successful login the generated token is sent to the requester.
 
 <br />
 
-## API
-
-### Login: `api/users/login`
-
-```
-POST api/users/login
-Host: localhost:3000
-Content-Type: application/json
-
-{
-    "email": "demo@appseed.us",
-    "password": "demo"
-}
-```
-
-### Signup: `/api/users/signup`
-
-```
-POST api/users/signup
-Host: localhost:3000
-Content-Type: application/json
-
-{
-    "email": "demo@appseed.us",
-    "password": "demo",
-    "name": "George",
-    "surname": "Clooney"
-}
-```
-
-<br />
-
 ## Setting up for development
 
 - clone repo: `git clone https://github.com/AnsurM/express-jwt-mysql-mvc-boilerplate.git`
 - change directory to express-jwt-mysql-mvc-boilerplate:
-- create a file named .env which should contain the following default setup:
+- create a file named .env which should contain a default setup as shown in the example environment file `.env.example`:
 
-```
-SALT=35kj7waj3k5kja09jeoi21kn0pg13iuhlkn // used in password hashing
-JWT_SECRET=secret        // used in JWT signing
-SESSION_SECRET=secret    // used for session data
-PORT=3000                // the port on which your server will be available on
-SERVER_ADDRESS=127.0.0.1 // or 0.0.0.0 for all or other interface address you want to listen
-```
+`
+SALT=35kj7waj3k5kja09jeoi21kn0pg13iuhlkn
+JWT_SECRET=myjwtsecret
+SESSION_SECRET=secret
+PORT=3000
+SERVER_ADDRESS=127.0.0.1
+
+DB_USERNAME=root
+DB_PASSWORD=mysql@123
+DB_NAME=test
+
+SALT_ROUNDS = 10
+
+MAILTRAP_HOST=smtp.mailtrap.io
+MAILTRAP_PORT=2525,
+MAILTRAP_USER=c18jrei892sd42  
+MAILTRAP_PASS=1a83nfj37jmf6c
+
+Gmail_SMTP_username=johndoe@gmail.com
+Gmail_SMTP_password=jkerjidisajdk
+Gmail_SMTP_server_address=smtp.gmail.com
+Gmail_SMTP_port_TLS=587
+Gmail_SMTP_port_SSL=465
+Gmail_SMTP_TLS_SSL_required=yes
+
+MAIL_SENDER="John Doe johndoe@gmail.com"
+`
 
 - users are saved in file `config/users.js`
 

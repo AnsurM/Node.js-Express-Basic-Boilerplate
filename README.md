@@ -27,33 +27,31 @@ After a successful login the generated token is sent to the requester.
 - change directory to express-jwt-mysql-mvc-boilerplate:
 - create a file named .env which should contain a default setup as shown in the example environment file `.env.example`:
 
-`
-SALT=35kj7waj3k5kja09jeoi21kn0pg13iuhlkn
-JWT_SECRET=myjwtsecret
-SESSION_SECRET=secret
-PORT=3000
-SERVER_ADDRESS=127.0.0.1
+        SALT=35kj7waj3k5kja09jeoi21kn0pg13iuhlkn
+        JWT_SECRET=myjwtsecret
+        SESSION_SECRET=secret
+        PORT=3000
+        SERVER_ADDRESS=127.0.0.1
 
-DB_USERNAME=root
-DB_PASSWORD=mysql@123
-DB_NAME=test
+        DB_USERNAME=root
+        DB_PASSWORD=mysql@123
+        DB_NAME=test
 
-SALT_ROUNDS = 10
+        SALT_ROUNDS = 10
 
-MAILTRAP_HOST=smtp.mailtrap.io
-MAILTRAP_PORT=2525,
-MAILTRAP_USER=c18jrei892sd42  
-MAILTRAP_PASS=1a83nfj37jmf6c
+        MAILTRAP_HOST=smtp.mailtrap.io
+        MAILTRAP_PORT=2525,
+        MAILTRAP_USER=c18jrei892sd42
+        MAILTRAP_PASS=1a83nfj37jmf6c
 
-Gmail_SMTP_username=johndoe@gmail.com
-Gmail_SMTP_password=jkerjidisajdk
-Gmail_SMTP_server_address=smtp.gmail.com
-Gmail_SMTP_port_TLS=587
-Gmail_SMTP_port_SSL=465
-Gmail_SMTP_TLS_SSL_required=yes
+        Gmail_SMTP_username=johndoe@gmail.com
+        Gmail_SMTP_password=jkerjidisajdk
+        Gmail_SMTP_server_address=smtp.gmail.com
+        Gmail_SMTP_port_TLS=587
+        Gmail_SMTP_port_SSL=465
+        Gmail_SMTP_TLS_SSL_required=yes
 
-MAIL_SENDER="John Doe johndoe@gmail.com"
-`
+        MAIL_SENDER="John Doe johndoe@gmail.com"
 
 - users are saved in file `config/users.js`
 
